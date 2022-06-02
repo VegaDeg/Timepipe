@@ -1,5 +1,5 @@
 # Timing
- A package package that visualize running time in high speed systems.
+ Timing is a package that visualize running time in high speed systems.
 
  This package is designed for high speed systems where all kinds of events happends and temporal relationship is important.
  
