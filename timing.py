@@ -1,20 +1,31 @@
 import time
 
-def check(nodeName):
-    checkList.append(nodeName)
-    timeList.append(time.time())
+objectList = []
 
-def displayNode():
-    for i in range(len(checkList)-1):
-        print(checkList[i] + " to " + checkList[i+1] + " took " + str(timeList[i+1]-timeList[i]) + " seconds")
+class event():
+    def __init__(self, eventName):
+        self.eventName = eventName
+        self.timeList = []
+        objectList.append(self)
 
-checkList = []
-timeList = []
+    def check(self):
+        self.timeList.append(time.time())
 
-check("node 1")
-time.sleep(0.03)
-check("node 2")
-time.sleep(0.7)
-check("node 3")
+def displayEvent():
+    print(len(objectList))
+    for i in range(0, len(objectList)-1):
+        print(i)
+        print(objectList[i].eventName + " to " + objectList[i+1].eventName + " took " + str(objectList[i+1].timeList[0]-objectList[i].timeList[0]) + " seconds")
 
-displayNode()
+
+event1 = event("event 1")
+event2 = event("event 2")
+event3 = event("event 3")
+
+event1.check()
+time.sleep(1)
+event2.check()
+time.sleep(1)
+event3.check()
+
+displayEvent()
