@@ -1,1 +1,0 @@
-from timing.event import event

@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/timepipe/__init__.py
+src/timepipe/event.py
+src/timepipe.egg-info/PKG-INFO
+src/timepipe.egg-info/SOURCES.txt
+src/timepipe.egg-info/dependency_links.txt
+src/timepipe.egg-info/top_level.txt

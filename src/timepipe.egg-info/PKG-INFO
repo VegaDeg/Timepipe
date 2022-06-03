@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: timepipe
+Version: 0.0.1
+Summary: A small example package
+Home-page: https://github.com/VegaDeg/Timing
+Author: fancy
+Author-email: ruomengfan@outlook.com
+Project-URL: Bug Tracker, https://github.com/VegaDeg/Timing
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Timing
+ Timing is a package that visualize running time in high speed systems.
+
+ This package is designed for high speed systems where all kinds of events happends and temporal relationship is important.
+ 
+ Create an event in advance, check it in your code at where you care about when something happened. You can also attach it as a part of a pipeline, so a set of events could be visualized conveniently and nicely.
