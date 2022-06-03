@@ -1,13 +1,12 @@
 import time
 
 class event():
-    def __init__(self):
-        self.eventName = "Event"
-        self.timeList = []
-        self.counter = 0
 
-    def __init__(self, eventName):
-        self.eventName = eventName
+    def __init__(self, eventName = None):
+        if not eventName:
+            self.eventName = "Event"
+        else:
+            self.eventName = eventName
         self.timeList = []
         self.counter = 0
 
